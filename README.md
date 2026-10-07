@@ -1,16 +1,73 @@
-# React + Vite
+Objectives:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.Build a placement management dashboard where students can track opportunities, applications and interviews in one place.
 
-Currently, two official plugins are available:
+2.Apply React concepts: components, hooks, Context API and routing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+3.Show placement data with charts for trends and application statistics.
 
-## React Compiler
+4.Provide a responsive interface that works on mobile and desktop.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+5.Practise form validation and API-style data handling, ready for a backend later.
 
-## Expanding the ESLint configuration
+*Tools and technologies:
+1.React 18 + Vite: UI library and fast build tool
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2.React Router DOM: page navigation and protected routes
+
+3.Context API + Hooks: global state (useState, useEffect, useMemo, useContext)
+
+4.Recharts: line and pie charts
+
+5.CSS (Flexbox and Grid, media queries): responsive design
+
+6.localStorage + mock async API (api.js): data persistence, replaceable with fetch()
+VS Code, Git/GitHub, Vercel/Netlify: development, source control, deployment
+
+*Techniques:
+
+1.Component-based architecture (pages, layout, shared context)
+
+2.Global state management with AppContext.
+
+3.Protected routes (redirect to login if not authenticated)
+
+4.Controlled forms with custom validation
+
+5.Async data fetching with promises (async/await)
+
+6.Memoised filtering and search
+
+7.Mobile-first responsive layout
+
+*Features:
+
+1.Authentication: register, log in, log out, and edit your profile (phone, CGPA, skills)
+
+2.Job openings: view jobs, search by company/role/skill/location, filter by type, and apply
+
+3.Application tracking: applied jobs, status (Applied → Shortlisted → Interview Scheduled → Selected), interview schedule
+
+4.Dashboard analytics: stat cards, placement trend chart, application statistics chart, upcoming deadlines
+
+5.Notifications: interview alerts, company updates, announcements, unread count, mark all as read
+
+*Output:
+
+1.Login/Register: validated forms with clear error messages.
+
+2.Dashboard: welcome message, four summary cards, a trends line chart, a status pie chart, and a deadlines list.
+
+3.Jobs page: job cards with an "Apply now" button that changes to "Applied".
+
+4.Applications page: table of applications with status badges and an interview schedule.
+
+5.Notifications page: a list with unread alerts highlighted.
+
+6.Profile page: editable details saved after validation.
+
+7.Responsive: the sidebar turns into a top menu on mobile.
+
+Author:
+
+VempallaBindhu
